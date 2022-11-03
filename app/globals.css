@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .header {
+    @apply flex 
+    justify-between 
+    gap-1
+    container 
+    mx-auto
+    px-4
+    py-4;
+  }
+  .menu {
+    @apply flex gap-3;
+    /* &__item{
+        bg-[red]
+    } */
+  }
+}
