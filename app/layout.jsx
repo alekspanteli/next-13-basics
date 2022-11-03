@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 export default function RootLayout({ children }) {
   return (
@@ -16,13 +17,19 @@ export default function RootLayout({ children }) {
           <nav aria-label="Primary">
             <ul className="menu">
               <li className="menu__item">
-                <a className="menu__link">Home</a>
+                <Link href="/" className="menu__link">
+                  Home
+                </Link>
               </li>
               <li className="menu__item">
-                <a className="menu__link">About</a>
+                <Link href="/about" className="menu__link">
+                  About
+                </Link>
               </li>
               <li className="menu__item">
-                <a className="menu__link">Contact</a>
+                <Link href="/contact" className="menu__link">
+                  Contact
+                </Link>
               </li>
             </ul>
           </nav>
