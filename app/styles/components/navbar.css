@@ -9,8 +9,7 @@
 }
 .menu {
   @apply flex gap-3;
-}
-
-.menu__item {
-  @apply bg-[red];
+  &__link {
+    @apply text-black hover:text-orange-500;
+  }
 }
